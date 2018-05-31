@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400');
+
+/*all*/
+
+body{
+    background: #232222;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.preload * { /* prevents chrome bug of firing css transitions onload */
+ -webkit-transition: none !important;
+ -moz-transition: none !important;
+ -ms-transition: none !important;
+ -o-transition: none !important;
+}
+
+/*centering*/
+
+.vcenter{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    margin-top: -150px;
+}
+
+.hcenter{
+    width: 260px;
+    min-width: 260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*text*/
+
+h1{
+    color: #FAB728;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FAB728;
+    margin-top: 0px;
+}
+
+/*input*/
+
+input{
+    position: relative;
+    display: inline-block;
+    width: 14em;
+    height: 30px;
+    background: 0%;
+    margin: 0 24px 8px 0px;
+    color: #FAB728;
+    letter-spacing: 2px;
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-color: white;
+    caret-color: #FAB728;
+    transition: border-color 0.5s;
+}
+
+input:focus{
+    border-color: #FAB728;
+}
+
+input:hover{
+    border-color: #FAB728;
+}
+
+input:valid{
+    border-color: #FAB728;
+}
+
+.loginButton{
+    position: relative;
+    opacity: 0;
+    top: 30px;
+    padding: 8px 12px;
+    color: #FAB728;
+    text-decoration: none;
+    border: 0.5px #FAB728 solid;
+    cursor: default;
+    transition: opacity 1s;
+}
+
+.loginButton:visited{
+    color: #FAB728;
+    text-decoration: none;
+}
+
+.fadeInButton{
+    opacity: 1;
+}
+
+/*icon*/
+
+.icon{
+    position: relative;
+    margin: 0 4px -16px 0;
+    display: inline-block;
+}
+
+.usernameIcon{
+    fill: #fff;
+    transition: fill 1s;
+}
+
+.passwordIcon{
+    fill: #fff;
+    transition: fill 1s;
+}
+
+.iconHover{
+    fill: #FAB728;
+}
+
+/* homebar */
+
+section.homebar div{
+    width: 100%;
+    position: fixed;
+    background-color: #FAB728;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 12px 24px;
+    height: 40px;
+    min-height: 40px;
+}
+
+section.homebar div h2{
+    font-weight: 700;
+    color: #232222;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+section.homebar div h2 a{
+    text-decoration: none;
+}
+
+section.homebar div h2 a:visited{
+    color: #232222;
+}
+
+#signOutButton{
+    position: fixed;
+    left: 92%;
+}
+
+/* nav */
+
+nav{
+    display: inline-block;
+    position: fixed;
+    top: 64px;
+    padding: 24px;
+    background-color: #232222;
+    height: 100%;
+    visibility: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* homepage */
+
+section{
+    margin-left: 48px;
+    width: 100%;
+}
+
+section div{
+    margin: 8px;
+    padding: 16px;
+    float: left;
+    background-color: #333030;
+    min-height: 126px;
+}
+
+section div ul li{
+    margin: 3px 0;
+}
+
+section.row1 div{
+    margin-top: 80px;
+    width: 28%;
+}
+
+section.row2 div{
+    width: 91.5%;
+}
+
+section.row2 div ul{
+    float: left;
+}
+
+section.row2 div ul li a{
+    margin-left: 16px;
+}
+
+section.row3 div{
+    width: 20.01%;
+}
+
+section div ul li a{
+    color: #FAB728;
+}
+
+section div ul li a:visited{
+    color: #FAB728;
+}
