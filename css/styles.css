@@ -1,6 +1,8 @@
+/* font import */
+
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400');
 
-/*all*/
+/* main */
 
 body{
     background: #232222;
@@ -12,13 +14,14 @@ body{
 }
 
 .preload * { /* prevents chrome bug of firing css transitions onload */
- -webkit-transition: none !important;
- -moz-transition: none !important;
- -ms-transition: none !important;
- -o-transition: none !important;
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 
-/*centering*/
+/* centering */
 
 .vcenter{
     position: absolute;
@@ -35,7 +38,7 @@ body{
     text-align: center;
 }
 
-/*text*/
+/* text views */
 
 h1{
     color: #FAB728;
@@ -54,7 +57,7 @@ h2{
     margin-top: 0px;
 }
 
-/*input*/
+/* input fields */
 
 input{
     position: relative;
@@ -105,7 +108,7 @@ input:valid{
     opacity: 1;
 }
 
-/*icon*/
+/* icons */
 
 .icon{
     position: relative;
@@ -123,42 +126,42 @@ input:valid{
     transition: fill 1s;
 }
 
-.iconHover{
+.iconHover{ /* class for colour "animation" */
     fill: #FAB728;
 }
 
-/* homebar */
+/* home.html nav bar */
 
-section.homebar div{
+section.navbar div{
     width: 100%;
     position: fixed;
     background-color: #FAB728;
     top: 0;
     left: 0;
     margin: 0;
-    padding: 12px 24px;
-    height: 40px;
-    min-height: 40px;
+    padding: 1em 1.8em;
+    height: 3.4em;
+    min-height: 3.4em;
 }
 
-section.homebar div h2{
+section.navbar div h2{
     font-weight: 700;
     color: #232222;
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 1em;
 }
 
-section.homebar div h2 a{
+section.navbar div h2 a{
     text-decoration: none;
 }
 
-section.homebar div h2 a:visited{
+section.navbar div h2 a:visited{
     color: #232222;
 }
 
 #signOutButton{
     position: fixed;
-    left: 92%;
+    right: 2.4em;
 }
 
 /* nav */
@@ -179,7 +182,14 @@ ul {
     padding: 0;
 }
 
-/* homepage */
+div a svg{
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+    left: 4px;
+}
+
+/* homepage - body */
 
 section{
     margin-left: 48px;
@@ -187,11 +197,12 @@ section{
 }
 
 section div{
+    position: static;
     margin: 8px;
     padding: 16px;
     float: left;
     background-color: #333030;
-    min-height: 126px;
+    min-height: 122px;
 }
 
 section div ul li{
@@ -199,7 +210,7 @@ section div ul li{
 }
 
 section.row1 div{
-    margin-top: 80px;
+    margin-top: 60px;
     width: 28%;
 }
 
@@ -211,7 +222,7 @@ section.row2 div ul{
     float: left;
 }
 
-section.row2 div ul li a{
+.newstitles{
     margin-left: 16px;
 }
 
@@ -225,4 +236,40 @@ section div ul li a{
 
 section div ul li a:visited{
     color: #FAB728;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 1000px){
+    section.row1 div{
+        width: 26%;
+    }
+    section.row2 div{
+        width: 88%;
+    }
+    section.row3 div{
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 725px){
+    section.row1{
+        margin-top: 60px;
+    }
+    section.row1 div{
+        width: 80%;
+        margin-top: 8px;
+    }
+    .newsdates{
+        display: none;
+    }
+    .newstitles{
+        margin-left: 0;
+    }
+    section.row2 div{
+        width: 80%;
+    }
+    section.row3 div{
+        width: 80%;
+    }
 }
