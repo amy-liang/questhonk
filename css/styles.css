@@ -38,7 +38,7 @@ body{
     text-align: center;
 }
 
-/* text views */
+/* text */
 
 h1{
     color: #FAB728;
@@ -104,7 +104,7 @@ input:valid{
     text-decoration: none;
 }
 
-.fadeInButton{
+.fadeInButton{ /* for fading animation */
     opacity: 1;
 }
 
@@ -126,13 +126,13 @@ input:valid{
     transition: fill 1s;
 }
 
-.iconHover{ /* class for colour "animation" */
+.iconHover{ /* for colour animation */
     fill: #FAB728;
 }
 
-/* home.html nav bar */
+/* top navigaton bar */
 
-section.navbar div{
+section.navBar div{
     width: 100%;
     position: fixed;
     background-color: #FAB728;
@@ -142,36 +142,38 @@ section.navbar div{
     padding: 1em 1.8em;
     height: 3.4em;
     min-height: 3.4em;
+    z-index: 2;
 }
 
-section.navbar div h2{
+section.navBar h2{
     position: fixed;
     font-weight: 700;
     color: #232222;
     display: inline-block;
     margin-top: 1em;
+}
+
+section.navBar div a + h2{
     left: 68px;
 }
 
-section.navbar div h2 a{
+section.navBar div h2 + h2{
+    right: 2.4em;
+}
+
+section.navBar div h2 a{
     text-decoration: none;
 }
 
-section.navbar div h2 a:visited{
+section.navBar div h2 a:visited{
     color: #232222;
 }
 
-#signOutButton{
-    position: fixed;
-    right: 2.4em;
-    left: auto;
-}
-
-section.navbar img{
+section.navBar img{
     position: fixed;
 }
 
-/* nav */
+/* side navigation */
 
 nav{
     display: inline-block;
@@ -189,7 +191,7 @@ ul {
     padding: 0;
 }
 
-div a svg{
+div a svg{ /* menu icon */
     position: fixed;
     z-index: 2;
     top: 100px;
@@ -197,6 +199,16 @@ div a svg{
 }
 
 /* homepage - body */
+
+.sideMargin{ /* keeps a fixed "margin" on the right side */
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 24px;
+    z-index: 1;
+    background: #232222;
+}
 
 section{
     margin-left: 48px;
@@ -209,7 +221,7 @@ section div{
     padding: 16px;
     float: left;
     background-color: #333030;
-    min-height: 118px;
+    min-height: 100px;
 }
 
 section div ul li{
@@ -221,15 +233,24 @@ section.row1 div{
     width: 28%;
 }
 
+section.row1 div div{ /* two column courses */
+    margin: 0px 36px 0px 0px;
+    padding: 0px;
+    float: left;
+    min-height: auto;
+    height: 50px;
+    max-height: 50px;
+}
+
 section.row2 div{
     width: 91.5%;
 }
 
-section.row2 div ul{
+section.row2 div ul{ /* float news */
     float: left;
 }
 
-.newstitles{
+.newsTitles{
     margin-left: 16px;
 }
 
@@ -267,10 +288,17 @@ section div ul li a:visited{
         width: 80%;
         margin-top: 8px;
     }
-    .newsdates{
+    section.row1 div.termSummary div{
+        margin: 0px 15% 0px 0px;
+        width: auto;
+    }
+    section.row1 div.termSummary ul{
+        width: 90px;
+    }
+    .newsDates{
         display: none;
     }
-    .newstitles{
+    .newsTitles{
         margin-left: 0;
     }
     section.row2 div{
@@ -278,5 +306,17 @@ section div ul li a:visited{
     }
     section.row3 div{
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    section.row1 div, section.row2 div, section.row3 div{
+        width: 70%;
+    }
+    section.row1 div div{
+        margin: 0px;
+        clear: both;
+        height: auto;
+        max-height: 200px;
     }
 }
