@@ -145,10 +145,12 @@ section.navbar div{
 }
 
 section.navbar div h2{
+    position: fixed;
     font-weight: 700;
     color: #232222;
     display: inline-block;
     margin-top: 1em;
+    left: 68px;
 }
 
 section.navbar div h2 a{
@@ -162,6 +164,11 @@ section.navbar div h2 a:visited{
 #signOutButton{
     position: fixed;
     right: 2.4em;
+    left: auto;
+}
+
+section.navbar img{
+    position: fixed;
 }
 
 /* nav */
@@ -202,11 +209,11 @@ section div{
     padding: 16px;
     float: left;
     background-color: #333030;
-    min-height: 122px;
+    min-height: 118px;
 }
 
 section div ul li{
-    margin: 3px 0;
+    margin: 2px 0;
 }
 
 section.row1 div{
