@@ -210,12 +210,12 @@ div a svg{ /* menu icon */
     background: #232222;
 }
 
-section{
+section.dashboard{
     margin-left: 48px;
     width: 100%;
 }
 
-section div{
+section.dashboard div{
     position: static;
     margin: 8px;
     padding: 16px;
@@ -224,7 +224,7 @@ section div{
     min-height: 100px;
 }
 
-section div ul li{
+section.dashboard div ul li{
     margin: 2px 0;
 }
 
@@ -258,11 +258,11 @@ section.row3 div{
     width: 20.01%;
 }
 
-section div ul li a{
+section.dashboard div ul li a{
     color: #FAB728;
 }
 
-section div ul li a:visited{
+section.dashboard div ul li a:visited{
     color: #FAB728;
 }
 
