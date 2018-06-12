@@ -104,7 +104,7 @@ input:valid{
     text-decoration: none;
 }
 
-.fadeInButton{ /* for fading animation */
+.fadeIn{ /* for fading animation */
     opacity: 1;
 }
 
@@ -196,6 +196,30 @@ div a svg{ /* menu icon */
     z-index: 2;
     top: 100px;
     left: 4px;
+    visibility: visible;
+}
+
+nav a{
+    color: #FAB728;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: #FAB728;
+}
+
+nav h2{
+    padding-top: 16px;
+}
+
+nav ul li{
+    padding: 2px;
+}
+
+nav svg{
+    position: fixed;
+    left: 214px;
+    top: 8px;
 }
 
 /* homepage - body */
@@ -260,11 +284,13 @@ section.row3 div{
 
 section.dashboard div ul li a{
     color: #FAB728;
+    text-decoration: none;
 }
 
 section.dashboard div ul li a:visited{
     color: #FAB728;
 }
+
 
 /* responsive design */
 
@@ -280,7 +306,7 @@ section.dashboard div ul li a:visited{
     }
 }
 
-@media screen and (max-width: 725px){
+@media screen and (max-width: 775px){
     section.row1{
         margin-top: 60px;
     }
