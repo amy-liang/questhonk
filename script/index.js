@@ -69,11 +69,11 @@ passwordInput.addEventListener("mouseleave", function() {
 // Log In Button Visibility Triggers
 usernameInput.addEventListener("input", function(){
     if (passwordInput.value != "" && usernameInput.value != "") {
-        loginButton.classList.add("fadeInButton");
+        loginButton.classList.add("fadeIn");
         loginButton.href = "pages/home.html";
         loginButton.style.cursor = "pointer";
     } else {
-        loginButton.classList.remove("fadeInButton");
+        loginButton.classList.remove("fadeIn");
         loginButton.href = "javascript:void(0)";
         loginButton.style.cursor = "default";
     }
@@ -81,11 +81,11 @@ usernameInput.addEventListener("input", function(){
 
 passwordInput.addEventListener("input", function() {
     if (passwordInput.value != "" && usernameInput.value != "") {
-        loginButton.classList.add("fadeInButton");
+        loginButton.classList.add("fadeIn");
         loginButton.href = "pages/home.html";
         loginButton.style.cursor = "pointer";
     } else {
-        loginButton.classList.remove("fadeInButton");
+        loginButton.classList.remove("fadeIn");
         loginButton.href = "javascript:void(0)";
         loginButton.style.cursor = "default";
     }
