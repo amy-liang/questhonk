@@ -1,9 +1,9 @@
 // DOM Variables
-var usernameInput = document.getElementById("usernameInput");
-var usernameIconList = document.getElementsByClassName("usernameIcon");
-var passwordInput = document.getElementById("passwordInput");
-var passwordIconList = document.getElementsByClassName("passwordIcon");
-var loginButton = document.getElementsByClassName("loginButton").item(0);
+const usernameInput = document.getElementById("usernameInput");
+const usernameIconList = document.getElementsByClassName("usernameIcon");
+const passwordInput = document.getElementById("passwordInput");
+const passwordIconList = document.getElementsByClassName("passwordIcon");
+const loginButton = document.getElementsByClassName("loginButton").item(0);
 
 // prevents chrome bug of firing css transitions onload
 window.onload = function(){
