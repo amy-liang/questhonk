@@ -346,3 +346,12 @@ section.dashboard div ul li a:visited{
         max-height: 200px;
     }
 }
+
+@media screen and (max-width: 320px){
+    #menuCancel{
+        position: absolute;
+        left: auto;
+        top: 16px;
+        right: 8px;
+    }
+}
